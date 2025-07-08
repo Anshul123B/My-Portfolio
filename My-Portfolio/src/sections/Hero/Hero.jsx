@@ -21,13 +21,13 @@ const Hero = () => {
         </h1>
         <h2>Frontend Developer</h2>
         <span>
-            <a href="https://linkedin.com/" target="_blank">
+            <a href="https://www.linkedin.com/in/anshul-bhatt001/" target="_blank">
                <img className="linkedin-icon" src={linkedinIcon} alt="linkedin-icon" />
-            <a href="https://github.com/" target="_blank">
+            </a>
+            <a href="https://github.com/Anshul123B" target="_blank">
                <img className="github-icon" src={githubIcon} alt="leetcode-icon" />
             </a>
-            </a>
-            <a href="https://leetcode.com/" target="_blank">
+            <a href="https://leetcode.com/u/Anshul123B/" target="_blank">
                <img className="leetcode-icon" src={leetcodeIcon} alt="leetcode-icon" />
             </a>
         </span>
