@@ -1,18 +1,31 @@
 import React from 'react';
 import './Hero.css'; 
 import heroImg from '../../assets/hero-img.png';
-import themeIcon from '../../assets/sun.svg';
-import leetcodeIcon from '../../assets/Leetcode-dark.png';
-import githubIcon from '../../assets/github-light.svg';
-import linkedinIcon from '../../assets/linkedin-light.svg';
+import sun from '../../assets/sun.svg';
+import moon from '../../assets/moon.svg';
+import leetcodeDark from '../../assets/Leetcode-dark.png';
+import leetcodeLight from '../../assets/Leetcode-light.png';
+import githubLight from '../../assets/github-light.svg';
+import githubDark from '../../assets/github-dark.svg';
+import linkedinLight from '../../assets/linkedin-light.svg';
+import linkedinDark from '../../assets/linkedin-dark.svg';
 import resume from '../../assets/Resume.pdf'
+import { useTheme } from '../../common/ThemeContext';
 
 const Hero = () => {
+  const { theme, toggleTheme } = useTheme();
+
+  const themeIcon = theme === 'light' ? sun : moon;
+  const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
+  const githubIcon = theme === 'light' ? githubLight : githubDark;
+  const leetcodeIcon = theme === 'light' ? leetcodeDark : leetcodeLight;
+
   return ( 
     <section id='hero' className='container'>
       <div className='colorModeContainer'>
         <img className='hero' src={heroImg} alt="Hero" />
-        <img className='comorMode' src={themeIcon} alt="mode icon" />
+        <img className='colorMode' src={themeIcon} alt="Color mode icon"
+        onClick={toggleTheme} />
       </div>
       <div className="info">
         <h1>Anshul
