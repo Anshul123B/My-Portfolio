@@ -48,7 +48,7 @@ const Hero = () => {
         <p className="desription">
           Passionate Software Engineer with strong learning abilities and 
           <br/> 
-          the capacity to adapt quickly to new technologies
+          the capacity to adapt quickly to new technologies.
         </p>
         <a href={resume} download>
           <button className="hover">Resume</button>
