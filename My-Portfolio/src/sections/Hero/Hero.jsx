@@ -45,7 +45,7 @@ const Hero = () => {
                <img className="leetcode-icon" src={leetcodeIcon} alt="leetcode-icon" />
             </a>
         </span>
-        <p className="desription">
+        <p className="description">
           Passionate Software Engineer with strong learning abilities and 
           <br/> 
           the capacity to adapt quickly to new technologies.
