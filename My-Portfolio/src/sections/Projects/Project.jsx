@@ -10,6 +10,8 @@ const Project = () => {
             <a href="https://github.com/Anshul123B/Real-Estate-Website">
             <img className="hover" src={viberr} alt="viberr logo" />
             </a>
+            <h3>EstatePro</h3>
+            <p>Real estate listing platform</p>            
         </div>
     </section>
   )
