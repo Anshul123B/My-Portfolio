@@ -1,6 +1,7 @@
 import React from 'react';
 import './Project.css';
 import viberr from '../../assets/viberr.png'
+import freshBurger from '../../assets/fresh-burger.png';
 import ProjectCard from '../../common/projectCard';
 
 const Project = () => {
@@ -9,6 +10,11 @@ const Project = () => {
         <h1 className="sectionTitle">Projects</h1>
         <div className="projectsContainer">
           <ProjectCard src={viberr} 
+          link="https://github.com/Anshul123B/Real-Estate-Website" 
+          h3="EstatePro"
+          p="Real estate listing platform"
+          />
+          <ProjectCard src={freshBurger} 
           link="https://github.com/Anshul123B/Real-Estate-Website" 
           h3="EstatePro"
           p="Real estate listing platform"

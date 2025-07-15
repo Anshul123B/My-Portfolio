@@ -19,3 +19,9 @@ p{
     margin-top: 6px;
     color: #bab6b6;
 }
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     
+  gap: 40px;               
+}
