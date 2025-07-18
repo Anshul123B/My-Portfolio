@@ -25,3 +25,8 @@ p{
   align-items: center;     
   gap: 30px;               
 }
+.container {
+  min-height: unset;
+  margin-bottom: 60px;  
+}
+

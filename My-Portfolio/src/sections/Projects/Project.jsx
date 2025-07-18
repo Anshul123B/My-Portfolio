@@ -22,14 +22,12 @@ const Project = () => {
             h3="FreshCart" 
             p="E-commerce cart app"
           />
-
           <ProjectCard 
             src={fitlift} 
             link="https://github.com/Anshul123B/2048-Game" 
             h3="TileTwister 2048" 
             p="2048 puzzle game"
           />
-
           <ProjectCard 
             src={hipsster} 
             link="https://github.com/Anshul123B/Text-To-Speech-Converter/tree/main/Text%20To%20Speech%20Converter" 
