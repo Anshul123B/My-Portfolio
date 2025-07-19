@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-const SkillList = () => {
+const SkillList = ({ src, skill }) => {
   return (
-     <span>
-       <img src={checkMarkIcon} alt="Checkmark icon" />
-       <p>HTML</p>
-     </span>
-  )
-}
+    <span className="skillItem">
+      <img src={src} alt="Checkmark icon" />
+      <p style={{ margin: 0 }}>{skill}</p>
+    </span>
+  );
+};
 
-export default SkillList
+export default SkillList;
