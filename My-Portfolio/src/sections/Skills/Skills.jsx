@@ -6,7 +6,7 @@ import SkillList from '../../common/SkillList';
 const Skills = () => {
   return (
     <section id="skills" className="skillsContainer">
-      <h1>SKILLS</h1>
+      <h1>Skills</h1>
       <div className="skillList">
         <SkillList src={checkMarkIcon} skill="HTML" />
         <SkillList src={checkMarkIcon} skill="CSS" />
