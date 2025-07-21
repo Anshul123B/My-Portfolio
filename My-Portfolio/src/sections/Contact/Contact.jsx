@@ -29,11 +29,11 @@ const Contact = () => {
                     Message
                 </label>
                 <textarea name="message" id="Message" 
-                placeholder="Message..." 
+                placeholder="Type your Message here..." 
                 required 
                 textarea/>
             </div>
-            <input className="hoverBtn" type="submit" 
+            <input className="hover btn" type="submit" 
             value="Submit" />
         </form>
     </section>
