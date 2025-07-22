@@ -16,7 +16,7 @@ const Skills = () => {
         <SkillList src={checkMarkIcon} skill="ReactJs" />
         <SkillList src={checkMarkIcon} skill="Tailwind CSS" />
         <SkillList src={checkMarkIcon} skill="Git" />
-        <SkillList src={checkMarkIcon} skill="Github" />
+        <SkillList src={checkMarkIcon} skill="GitHub" />
         
         <SkillList src={checkMarkIcon} skill="C" />
         <SkillList src={checkMarkIcon} skill="C++" />
