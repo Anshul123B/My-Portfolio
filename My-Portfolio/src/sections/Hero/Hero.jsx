@@ -22,10 +22,10 @@ const Hero = () => {
   const leetcodeIcon = theme === 'light' ? leetcodeDark : leetcodeLight;
 
   return ( 
-    <section id='hero' className='container'>
+    <section id="hero" className='container'>
       <div className='colorModeContainer'>
-        <img className='hero' src={heroImg} alt="Hero" />
-        <img className='colorMode' src={themeIcon} alt="Color mode icon"
+        <img className="hero" src={heroImg} alt="Hero" />
+        <img className="colormode" src={themeIcon} alt="Color mode icon"
         onClick={toggleTheme} />
       </div>
       <div className="info">
