@@ -1,3 +1,17 @@
+.leetcode-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  margin-right: 8px;
+  margin-bottom: 4px;
+  opacity: 0.86;
+  background-color: transparent;
+  border-radius: 6px;
+}
+/* Apply white background ONLY in dark mode */
+body[data-theme='dark'] .leetcode-icon {
+  background-color: #fff;
+}
 :root {
   --background-color: #fff;
   --btn-color: #0987f2;

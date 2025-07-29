@@ -1,4 +1,4 @@
-.leetcode-icon {
+/*.leetcode-icon {
   width: 28px;
   height: 28px;
   object-fit: contain;
@@ -8,7 +8,7 @@
   background-color: transparent;
   border-radius: 6px;
 }
-/* Apply white background ONLY in dark mode */
+/* Apply white background ONLY in dark mode 
 body[data-theme='dark'] .leetcode-icon {
   background-color: #fff;
 }
