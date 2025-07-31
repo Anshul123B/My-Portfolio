@@ -1,31 +1,71 @@
+/* --- Base Styles --- */
 .skillsContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: left;
   padding: 30px 0;
-  color: white;
+  color: var(--text-color);
 }
+
 .skillsContainer h1 {
   font-size: 28px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
+
+/* Skill Groups Wrapper */
 .skillList {
   display: flex;
-  justify-content: space-evenly;
-  align-self: center;
-  flex-wrap: wrap;
-  row-gap: 40px;
-  max-width: 26ch;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
+
+/* Skill Items */
+.skillGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .skillItem {
   display: flex;
   align-items: center;
   gap: 8px;
   font-size: 16px;
 }
+
 .skillItem img {
   width: 20px;
 }
 
+/* Horizontal Line */
+.skillList hr {
+  width: 160px;
+  margin: 30px 0;
+  border: 0.5px solid var(--text-color);
+  opacity: 0.5;
+}
+
+/* --- Responsive Layout --- */
+@media screen and (min-width: 800px) {
+  .skillList {
+    gap: 40px;
+  }
+
+  .skillGroup {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .skillItem {
+    font-size: 20px;
+  }
+
+  .skillList hr {
+    width: 300px;
+  }
+}
