@@ -147,7 +147,7 @@ button:active{
 .description{
   max-width: 24ch;
 }
-@media (width >= 800px){
+@media screen and (min-width: 800px){
   .container{
     flex-direction: row-reverse;
     align-items: center;
@@ -158,7 +158,7 @@ button:active{
     }
   }
 }
-@media (width >= 1400px){
+@media screen and (min-width: 1400px){
   .container {
     .hero {
       max-width: 400px;
