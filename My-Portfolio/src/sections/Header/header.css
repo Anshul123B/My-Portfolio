@@ -1,54 +1,112 @@
-.mainHeader {
+.mainHeader{
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  width: 100vw;
   background-color: var(--background-color);
   color: var(--text-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
-
-.navBar {
+.navBar{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px 32px;
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
-
-.logo {
+.logo{
   font-size: 24px;
   font-weight: bold;
   font-family: 'Rubik', sans-serif;
 }
-
-.navLinks {
+.navLinks{
   list-style: none;
   display: flex;
   gap: 24px;
+  padding: 0;
+  margin: 0;
 }
-
-.navLinks li a {
+.navLinks li a{
   text-decoration: none;
   color: var(--text-color);
   font-family: 'Roboto Mono', monospace;
   font-size: 16px;
   transition: color 0.2s ease-in-out;
 }
-
-.navLinks li a:hover {
+.navLinks li a:hover{
   color: var(--btn-color);
 }
-
-@media screen and (max-width: 768px) {
-  .navBar {
+.menu-button{
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+.menu-icon{
+  font-size: 24px;
+  color: var(--text-color);
+}
+@media screen and (max-width: 768px){
+  .navBar{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 16px;
+    position: relative;
+  }
+  .logo{
+    font-size: 20px;
+  }
+  .menu-icon{
+    font-size: 20px;
+  }
+  .menu-button{
+    display: block;
+    padding: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .navLinks {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    right: 16px;
     flex-direction: column;
     gap: 12px;
+    background-color: var(--background-color);
+    padding: 0; 
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+    width: max-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    z-index: 1;
   }
-
-  .navLinks {
-    flex-direction: column;
-    gap: 16px;
+  .navLinks li a{
+    font-size: 16px;
+    padding: 8px 10px;
+    white-space: nowrap;
+    border-radius: 6px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  .navLinks li a:hover{
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+  }
+  .navLinks.show{
+    max-height: 500px;
+    padding: 14px 18px; /* Only appears when visible */
   }
 }
+
+
+
+
