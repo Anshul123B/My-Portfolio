@@ -1,23 +1,38 @@
-import React from 'react'
+import React from 'react';
 import './App.css';
-import Hero from './sections/Hero/Hero'
-import Project from './sections/Projects/Project'
-import Skills from './sections/Skills/Skills'
-import Contact from './sections/Contact/Contact'
-import Footer from './sections/Footer/Footer'
+import Hero from './sections/Hero/Hero';
+import Project from './sections/Projects/Project';
+import Skills from './sections/Skills/Skills';
+import Contact from './sections/Contact/Contact';
+import Footer from './sections/Footer/Footer';
 import Header from './sections/Header/Header';
 
 const App = () => {
   return (
     <div>
-      <Header/>
-      <Hero/>
-      <Project/>
-      <Skills/>
-      <Contact/>
-      <Footer/>
+      {/* Bubble animation background */}
+      <div className="bubbles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      {/*portfolio content */}
+      <Header />
+      <Hero />
+      <Project />
+      <Skills />
+      <Contact />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
