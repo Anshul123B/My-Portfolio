@@ -23,7 +23,7 @@ const Hero = () => {
 
   return ( 
     <section id="hero" className='container'>
-      <div className='colorModeContainer'>
+      <div className="colorModeContainer">
         <img className="hero" src={heroImg} alt="Hero" />
         <img className="colormode" src={themeIcon} alt="Color mode icon"
         onClick={toggleTheme} />

@@ -1,4 +1,4 @@
-/*.leetcode-icon {
+.leetcode-icon {
   width: 28px;
   height: 28px;
   object-fit: contain;
@@ -8,78 +8,9 @@
   background-color: transparent;
   border-radius: 6px;
 }
-/* Apply white background ONLY in dark mode 
+/* Apply white background ONLY in dark mode*/ 
 body[data-theme='dark'] .leetcode-icon {
   background-color: #fff;
-}
-/*:root {
-  --background-color: #fff;
-  --btn-color: #0987f2;
-  --btn-text-color: #fff;
-  --project-card-bg: #ffffff00;
-  --text-color: #222;
-  --form-text-color: #555;
-  --footer-text-color: #888;
-}
-/*use for defining the custom properties which can 
-be used everywhere in the web page */
-/*[data-theme='dark'] {
-  --background-color: #222; 
-  --btn-color: #fff;
-  --btn-text-color: #222;
-  --project-card-bg: #fff;
-  --text-color: #fff;
-  --form-text-color: #fff;
-  --footer-text-color: #bbb;
-}
-body {
-  background-color: var(--background-color);
-  display: flex;
-  justify-content: center;
-  margin: 0 auto 60px;
-}
-#root {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-}
-h1,
-h2,
-h3,
-p{
-  color: var(--text-color);
-  margin: 0;
-  padding: 0;
-}
-h2,
-h3,
-p{
-  font-family: 'Roboto Mono', monospace;
-}
-h1,
-h2{
-  text-transform: uppercase;
-}
-h2,
-h3{
-  font-size: 20px;
-}
-h1{
-  font-family: 'Rubik', sans-serif;
-  font-size: 32px;
-}
-h2{
-  margin-top: 4px;
-}
-p{
-  font-size: 16px;
-  font-weight: 300;
-}
-.sectionTitle{
-  margin-bottom: 30px;
-}
-.hover{
-  cursor: pointer;
 }
 /*now hero section specific task*/
 .container {
