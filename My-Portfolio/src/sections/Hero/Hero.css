@@ -1,4 +1,4 @@
-.leetcode-icon {
+.leetcode-icon{
   width: 28px;
   height: 28px;
   object-fit: contain;
@@ -8,14 +8,15 @@
   background-color: transparent;
   border-radius: 6px;
 }
-/* Apply white background ONLY in dark mode*/ 
+/* Apply white background ONLY in dark mode */ 
 body[data-theme='dark'] .leetcode-icon {
   background-color: #fff;
 }
 *{
   transition: background-color 0.4s ease, color 0.3s ease;
 }
-/*now hero section specific task*/
+
+/* now hero section specific task */
 .container {
   display: flex;
   flex-direction: column;
@@ -29,7 +30,6 @@ body[data-theme='dark'] .leetcode-icon {
   padding-top: 120px;        
   box-sizing: border-box;  
 }
-
 .container.hero{
   max-width: 200px;
 }
@@ -58,7 +58,7 @@ button{
   margin-top: 15px;
   box-shadow: 0 4px 4px rgba(0, 0, 0,0.25);
   transition: box-shadow 200ms ease-in-out,
-  transform 200ms ease-in-out;
+              transform 200ms ease-in-out;
 }
 button:hover{
   transform: scale(1.05);
@@ -72,13 +72,14 @@ button:active{
 }
 .colorMode{
   position: absolute;
-  right: 0;
+  top: 10px;
+  right: 10px;
   width: 25px;
 }
 .colorMode:hover{
   cursor: pointer;
 }
-.description{
+.description {
   max-width: 24ch;
 }
 @keyframes fadeInUp{
@@ -88,23 +89,35 @@ button:active{
 .hero{
   animation: fadeInUp 0.8s ease-out forwards;
 }
+.typewriter{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid var(--text-color);
+  animation: typing 2s steps(20, end), blink 0.6s step-end infinite;
+}
+@keyframes typing{
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blink{
+  50% { border-color: transparent; }
+}
 @media screen and (min-width: 800px){
   .container{
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-evenly;
-    .hero{
-      max-width: 350px;
-      width: 350px;
-    }
+    text-align: left;
+  }
+  .hero{
+    max-width: 350px;
+    width: 350px;
   }
 }
 @media screen and (min-width: 1400px){
-  .container {
-    .hero {
-      max-width: 400px;
-      width: 400px;
-    }
+  .container .hero{
+    max-width: 400px;
+    width: 400px;
   }
 }
-

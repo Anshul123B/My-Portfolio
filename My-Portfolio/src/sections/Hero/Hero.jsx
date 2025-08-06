@@ -33,7 +33,7 @@ const Hero = () => {
             <br />
             Bhatt
         </h1>
-        <h2>Frontend Developer</h2>
+        <h2 className="typewriter">Frontend Developer</h2>
         <span>
             <a href="https://www.linkedin.com/in/anshul-bhatt001/" target="_blank">
                <img className="linkedin-icon" src={linkedinIcon} alt="linkedin-icon" />
