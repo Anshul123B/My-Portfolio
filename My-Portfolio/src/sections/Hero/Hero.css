@@ -115,6 +115,58 @@ button:active{
     width: 350px;
   }
 }
+/* Shimmer effect for Resume button */
+button.hover {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+button.hover::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  transform: skewX(-20deg);
+  animation: shimmer 2.5s infinite;
+}
+/*for icons */
+span a img {
+  transition: transform 0.2s ease, filter 0.3s ease;
+  animation: pulseGlow 2s infinite ease-in-out;
+}
+span a:active img,
+span a:hover img {
+  transform: scale(1.15);
+  filter: brightness(1.3);
+}
+/* Pulsing glow animation */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0px transparent;
+  }
+  50% {
+    box-shadow: 0 0 12px var(--btn-color);
+  }
+  100% {
+    box-shadow: 0 0 0px transparent;
+  }
+}
+@keyframes shimmer{
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
 @media screen and (min-width: 1400px){
   .container .hero{
     max-width: 400px;

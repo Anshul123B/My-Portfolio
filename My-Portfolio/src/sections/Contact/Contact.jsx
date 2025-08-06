@@ -33,7 +33,6 @@ const Contact = () => {
             placeholder="Type your Message here..."
             required />
         </div>
-
         <input className="hover btn" type="submit" value="Submit" />
         {/* Show confirmation message */}
         {status && <p className="successMessage">{status}</p>}
