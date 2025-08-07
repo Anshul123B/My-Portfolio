@@ -27,7 +27,6 @@ const Contact = () => {
             placeholder="Enter your E-mail..."
             required />
         </div>
-
         <div className="formGroup">
           <textarea name="message" id="Message"
             placeholder="Type your Message here..."
