@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FiMenu } from 'react-icons/fi';
-import "./Header.css"
+import "./Header1.css"
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
