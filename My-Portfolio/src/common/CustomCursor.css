@@ -1,0 +1,98 @@
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--btn-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px var(--btn-color);
+  transition: all 0.2s ease;
+}
+
+.cursor-ring {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--btn-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.6;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: ringPulse 2s ease-in-out infinite;
+}
+
+@keyframes ringPulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.4;
+  }
+}
+
+/* Hovering state - expand and add glow */
+.custom-cursor.hovering .cursor-dot {
+  width: 12px;
+  height: 12px;
+  background: transparent;
+  border: 2px solid var(--btn-color);
+  box-shadow: 0 0 20px var(--btn-color);
+}
+
+.custom-cursor.hovering .cursor-ring {
+  width: 60px;
+  height: 60px;
+  border-width: 3px;
+  opacity: 0.8;
+  background: radial-gradient(circle, rgba(9, 135, 242, 0.1), transparent);
+}
+
+/* Clicking state - shrink effect */
+.custom-cursor.clicking .cursor-dot {
+  width: 4px;
+  height: 4px;
+}
+
+.custom-cursor.clicking .cursor-ring {
+  width: 30px;
+  height: 30px;
+  border-width: 3px;
+}
+
+/* Trail particles */
+.cursor-trail {
+  width: 6px;
+  height: 6px;
+  background: var(--btn-color);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  box-shadow: 0 0 8px var(--btn-color);
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+/* Hide custom cursor on mobile/touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .custom-cursor,
+  .cursor-trail {
+    display: none;
+  }
+  * {
+    cursor: auto !important;
+  }
+}

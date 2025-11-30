@@ -26,6 +26,14 @@ input,textarea{
     justify-self: center;
     background-color: var(--background-color);
     color: var(--form-text-color);
+    transition: all 0.3s ease;
+    outline: none;
+}
+input:focus,
+textarea:focus {
+    border-color: var(--btn-color);
+    box-shadow: 0 0 20px rgba(9, 135, 242, 0.3);
+    transform: translateY(-2px);
 }
 ::placeholder{
     color: var(--form-text-color);

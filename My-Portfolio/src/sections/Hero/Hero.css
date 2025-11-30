@@ -59,25 +59,52 @@ button{
   box-shadow: 0 4px 4px rgba(0, 0, 0,0.25);
   transition: box-shadow 200ms ease-in-out,
               transform 200ms ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+button:hover::after {
+  width: 300px;
+  height: 300px;
 }
 button:hover{
   transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(9, 135, 242, 0.6);
 }
 button:active{
   transform: translateY(2px);
   box-shadow: 0 2px 2px rgba(0, 0, 0,0.25);
 }
-.container{
+.colorModeContainer{
   position: relative;
+  animation: floatImage 3s ease-in-out infinite;
+}
+@keyframes floatImage {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
 }
 .colorMode{
   position: absolute;
   top: 10px;
   right: 10px;
   width: 25px;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 .colorMode:hover{
   cursor: pointer;
+  transform: rotate(180deg) scale(1.2);
+  filter: drop-shadow(0 0 10px var(--btn-color));
 }
 .description {
   max-width: 24ch;

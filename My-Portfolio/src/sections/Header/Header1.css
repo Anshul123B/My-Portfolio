@@ -3,10 +3,18 @@
   top: 0;
   left: 0;
   width: 100vw;
-  background-color: var(--background-color);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   color: var(--text-color);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   z-index: 1000;
+  transition: all 0.3s ease;
+}
+body[data-theme='dark'] .mainHeader {
+  background: rgba(34, 34, 34, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .navBar{
   display: flex;
@@ -22,6 +30,16 @@
   font-size: 24px;
   font-weight: bold;
   font-family: 'Rubik', sans-serif;
+  background: linear-gradient(135deg, var(--btn-color), #23a6d5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientMove 3s ease infinite;
+  background-size: 200% 200%;
+}
+@keyframes gradientMove {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }
 .navLinks{
   list-style: none;

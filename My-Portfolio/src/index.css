@@ -17,6 +17,7 @@
   background: rgba(0, 150, 255, 0.35);
   border-radius: 50%;
   animation: rise 20s infinite ease-in;
+  box-shadow: 0 0 20px rgba(0, 150, 255, 0.5);
 }
 /* Desktop & default sizes */
 .bubbles span:nth-child(1) { left: 10%; width: 40px; height: 40px; animation-delay: 0s; }
@@ -54,4 +55,21 @@
 /* Dark mode bubbles */
 body[data-theme='dark'] .bubbles span {
   background: rgba(255, 255, 255, 0.2);
+}
+
+/* Custom Cursor Effects */
+* {
+  cursor: none;
+}
+
+/* Selection Style */
+::selection {
+  background-color: rgba(9, 135, 242, 0.8);
+  color: #fff;
+}
+
+/* Smooth transitions for all interactive elements */
+a, button, img {
+  cursor: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -50,7 +50,7 @@ const Hero = () => {
           <br/> 
           the capacity to adapt quickly to new technologies.
         </p>
-        <a href={resume} download>
+        <a href={resume} download="Anshul_Bhatt_Resume.pdf">
           <button className="hover">Resume</button>
         </a>
       </div>

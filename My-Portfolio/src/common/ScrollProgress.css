@@ -1,0 +1,20 @@
+.scroll-progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 10001;
+}
+
+.scroll-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #0987f2, #23a6d5, #00ffae);
+  transition: width 0.1s ease;
+  box-shadow: 0 0 10px rgba(9, 135, 242, 0.5);
+}
+
+body[data-theme='dark'] .scroll-progress-container {
+  background-color: rgba(255, 255, 255, 0.1);
+}

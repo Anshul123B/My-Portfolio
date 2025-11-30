@@ -4,6 +4,7 @@ img.hover{
     background-color: var(--project-card-bg);
     margin-bottom: 5px;
     border-radius: 20px;
+    transition: transform 0.6s ease, box-shadow 0.4s ease;
 }
 a{
     display: inline-block;
@@ -11,9 +12,32 @@ a{
     text-decoration: none;
     color: #222;
     transition: transform 200ms ease-in-out;
+    perspective: 1000px;
+    position: relative;
 }
 a:hover{
-    transform: scale(1.05);
+    transform: translateY(-10px);
+}
+a:hover img.hover {
+    transform: rotateY(10deg) rotateX(5deg) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3),
+                0 0 30px rgba(9, 135, 242, 0.4);
+}
+a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(9, 135, 242, 0.1), rgba(35, 166, 213, 0.1));
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+}
+a:hover::before {
+    opacity: 1;
 }
 p{
     margin-top: 6px;
@@ -24,6 +48,24 @@ p{
   flex-direction: column;
   align-items: center;     
   gap: 30px;               
+}
+.projectsContainer a {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+.projectsContainer a:nth-child(1) { animation-delay: 0.1s; }
+.projectsContainer a:nth-child(2) { animation-delay: 0.2s; }
+.projectsContainer a:nth-child(3) { animation-delay: 0.3s; }
+.projectsContainer a:nth-child(4) { animation-delay: 0.4s; }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .container {
   min-height: unset;

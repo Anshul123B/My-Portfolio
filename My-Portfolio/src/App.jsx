@@ -6,10 +6,16 @@ import Skills from './sections/Skills/Skills';
 import Contact from './sections/Contact/Contact';
 import Footer from './sections/Footer/Footer';
 import Header from './sections/Header/Header';
+import CustomCursor from './common/CustomCursor';
+import ScrollProgress from './common/ScrollProgress';
+import ScrollToTop from './common/ScrollToTop';
 
 const App = () => {
   return (
     <div>
+      <CustomCursor />
+      <ScrollProgress />
+      <ScrollToTop />
       {/* Bubble animation background */}
       <div className="bubbles">
         <span></span>
