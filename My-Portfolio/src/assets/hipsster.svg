@@ -1,0 +1,40 @@
+<svg width="640" height="640" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="640" rx="120" fill="url(#gradient1)"/>
+  
+  <!-- Microphone Icon -->
+  <g transform="translate(220, 150)">
+    <!-- Mic Body -->
+    <rect x="70" y="40" width="60" height="120" rx="30" fill="white" opacity="0.95"/>
+    
+    <!-- Mic Stand -->
+    <path d="M 100 160 L 100 220 M 70 220 L 130 220" stroke="white" stroke-width="8" stroke-linecap="round" opacity="0.95"/>
+    
+    <!-- Sound Waves -->
+    <path d="M 30 100 Q 20 100 20 100" stroke="white" stroke-width="6" stroke-linecap="round" opacity="0.7" fill="none">
+      <animate attributeName="d" 
+        values="M 30 100 Q 20 100 20 100;M 30 80 Q 10 100 30 120;M 30 100 Q 20 100 20 100" 
+        dur="2s" 
+        repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M 170 100 Q 180 100 180 100" stroke="white" stroke-width="6" stroke-linecap="round" opacity="0.7" fill="none">
+      <animate attributeName="d" 
+        values="M 170 100 Q 180 100 180 100;M 170 80 Q 190 100 170 120;M 170 100 Q 180 100 180 100" 
+        dur="2s" 
+        repeatCount="indefinite"/>
+    </path>
+    
+    <circle cx="100" cy="60" r="4" fill="white" opacity="0.8"/>
+    <circle cx="100" cy="80" r="4" fill="white" opacity="0.8"/>
+    <circle cx="100" cy="100" r="4" fill="white" opacity="0.8"/>
+  </g>
+  
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>

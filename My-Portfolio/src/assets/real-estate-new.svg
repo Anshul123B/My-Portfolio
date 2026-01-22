@@ -1,0 +1,51 @@
+<svg width="640" height="640" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="640" rx="120" fill="url(#realEstateGradient)"/>
+  
+  <!-- Building Complex -->
+  <g transform="translate(140, 160)">
+    <!-- Main Building -->
+    <path d="M 180 80 L 280 140 L 280 400 L 80 400 L 80 140 Z" 
+          fill="white" opacity="0.95" stroke="white" stroke-width="3"/>
+    
+    <!-- Building Roof -->
+    <path d="M 60 140 L 180 70 L 300 140 Z" 
+          fill="white" opacity="0.95" stroke="white" stroke-width="3"/>
+    
+    <!-- Windows - Left Building -->
+    <rect x="100" y="180" width="35" height="40" rx="4" fill="url(#realEstateGradient)" opacity="0.3"/>
+    <rect x="100" y="240" width="35" height="40" rx="4" fill="url(#realEstateGradient)" opacity="0.3"/>
+    <rect x="100" y="300" width="35" height="40" rx="4" fill="url(#realEstateGradient)" opacity="0.3"/>
+    
+    <!-- Windows - Right Building -->
+    <rect x="225" y="180" width="35" height="40" rx="4" fill="url(#realEstateGradient)" opacity="0.3"/>
+    <rect x="225" y="240" width="35" height="40" rx="4" fill="url(#realEstateGradient)" opacity="0.3"/>
+    <rect x="225" y="300" width="35" height="40" rx="4" fill="url(#realEstateGradient)" opacity="0.3"/>
+    
+    <!-- Door -->
+    <rect x="155" y="330" width="50" height="70" rx="6" fill="url(#realEstateGradient)" opacity="0.4"/>
+    <circle cx="190" cy="365" r="4" fill="white" opacity="0.8"/>
+    
+    <!-- Side Building (Smaller) -->
+    <path d="M 300 200 L 360 200 L 360 400 L 300 400 Z" 
+          fill="white" opacity="0.85" stroke="white" stroke-width="3"/>
+    <rect x="315" y="230" width="30" height="35" rx="3" fill="url(#realEstateGradient)" opacity="0.3"/>
+    <rect x="315" y="285" width="30" height="35" rx="3" fill="url(#realEstateGradient)" opacity="0.3"/>
+    <rect x="315" y="340" width="30" height="35" rx="3" fill="url(#realEstateGradient)" opacity="0.3"/>
+    
+    <!-- Animated Light in Windows -->
+    <rect x="100" y="180" width="35" height="40" rx="4" fill="rgba(255,255,255,0.2)">
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="225" y="240" width="35" height="40" rx="4" fill="rgba(255,255,255,0.2)">
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <defs>
+    <linearGradient id="realEstateGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0987f2;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e90ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#23a6d5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>
